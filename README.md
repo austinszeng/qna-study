@@ -1,4 +1,4 @@
-# qna-study
+# QnA Study
 A small program to help study and memorize material from class
 
 # Future: Implement an average score from the number of attempts when retrying
