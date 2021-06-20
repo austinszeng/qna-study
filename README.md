@@ -12,7 +12,7 @@ When typing questions and answers into the qna.txt file, always separate them wi
 1. question 1?
 2. question 2?
 3. question 3?
-
+^
 1. answer 1
 2. answer 2
 3. answer 3
@@ -21,6 +21,3 @@ It is unnecessary to add the question numbers in front of the questions and answ
 
 ## Additional commands
 At any time, you can skip a question by typing `s` or quit by typing `q`.
-
-## Misc.
-In the review page, the correct answers are in `[]` next to the incorrect answer.
