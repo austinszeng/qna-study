@@ -7,15 +7,7 @@ A small program to help study and memorize material from class
 - a database to store how many times a question has been answered wrong and offer a retest with those questions in particular 
 
 ## Customizing questions and answers
-When typing questions and answers into the qna.txt file, always separate them with an empty line as so:
-
-1. question 1?
-2. question 2?
-3. question 3?
-^
-1. answer 1
-2. answer 2
-3. answer 3
+When typing questions and answers into the qna.txt file, always separate the questions from the corresponding answers with an empty line.
 
 It is unnecessary to add the question numbers in front of the questions and answers in any certain format -- or at all -- as long as the questions match up to their answers after the empty line.
 
