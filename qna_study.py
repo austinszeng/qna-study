@@ -3,8 +3,17 @@ import os
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+def press_enter():
+    enter_key = input('(Press enter to continue...)')
+    # wrong_key = True 
+    # while wrong_key:
+    #     enter_key = input('(Press enter to continue...)')
+    #     if enter_key == '':
+    #         wrong_key = False
+
+
 print('Welcome to QnA Study!')
-input('(Press enter to continue...)')
+press_enter()
 
 playing = True
 options = ['y', 'n']
@@ -28,7 +37,7 @@ while playing:
     right_or_wrong = []
     while i < len(questions):
         clear()
-        answer = input(questions[i] + " ")
+        answer = input(str(i + 1) + '. ' + questions[i].lstrip('1234567890. ') + ' ')
         if answer.lower() == answers[i].lstrip('1234567890. ').lower():
             # print()
             # input('Correct!')
@@ -75,11 +84,12 @@ while playing:
         i = 0
         while i < len(questions):
             if right_or_wrong[i] == True:
-                print('  ' + questions[i] + ' ' + user_answers[i])
+                print('[ ] ' + str(i + 1) + '. ' + questions[i].lstrip('1234567890. ') + ' ' + user_answers[i])
             else:
-                print('x ' + questions[i] + ' ' + user_answers[i] + ' [' + answers[i].lstrip('1234567890. ') + ']' )
+                print('[x] ' + str(i + 1) + '. ' + questions[i].lstrip('1234567890. ') + ' ' + user_answers[i] + ' [' + answers[i].lstrip('1234567890. ') + ']' )
             i += 1
-        input('(Press enter to continue...)')
+        print()
+        press_enter()
 
     ##### Retry ####
     clear()
